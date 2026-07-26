@@ -4,6 +4,7 @@ import re
 import nltk
 from nltk.corpus import stopwords
 
+nltk.download('stopwords', quiet=True)
 stop = set(stopwords.words("english"))
 sentiment_important = {
     "not", "no", "never", "none", "without", "below",
